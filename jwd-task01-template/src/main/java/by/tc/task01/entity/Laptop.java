@@ -66,7 +66,7 @@ public class Laptop extends Appliance implements Serializable{
             return true;
         }
         if(null == obj || getClass() == obj.getClass()){
-            return true;
+            return false;
         }
         Laptop laptop = (Laptop)obj;
         if( batteryCapacity != laptop.batteryCapacity ||

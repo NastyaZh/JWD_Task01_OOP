@@ -66,7 +66,7 @@ public class Oven extends Appliance implements Serializable{
             return true;
         }
         if(null == obj || getClass() == obj.getClass()){
-            return true;
+            return false;
         }
         Oven oven = (Oven)obj;
         return !(powerConsumption != oven.powerConsumption ||
