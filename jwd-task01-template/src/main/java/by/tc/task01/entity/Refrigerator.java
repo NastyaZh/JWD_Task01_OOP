@@ -65,7 +65,7 @@ public class Refrigerator extends Appliance implements Serializable{
         if(this == obj){
             return true;
         }
-        if(null == obj || getClass() == obj.getClass()){
+        if(null == obj || getClass() != obj.getClass()){
             return false;
         }
         Refrigerator refrigerator = (Refrigerator)obj;
